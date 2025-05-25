@@ -1,0 +1,57 @@
+@import "../scss/mixins";
+
+.header {
+  @include flex-between;
+  height: 76px;
+
+  &__item :nth-child(-n + 3) {
+    display: none;
+  }
+
+  @include tablet {
+    height: 48px;
+
+    &__item {
+      @include flex-center;
+
+      gap: 30px;
+      font-size: 14px;
+      font-weight: 400;
+      color: #4f4f4f;
+      text-transform: uppercase;
+
+      &__mod {
+        opacity: 0.5;
+      }
+    }
+
+    &__item :nth-child(-n + 3) {
+      display: flex;
+    }
+  }
+
+  @include desktop {
+    height: 48px;
+
+    &__logo img {
+      display: block;
+    }
+
+    &__item {
+      @include flex-center;
+
+      gap: 24px;
+      font-size: 14px;
+      font-weight: 400;
+      color: #4f4f4f;
+      text-transform: uppercase;
+
+      &__mod {
+        opacity: 0.5;
+      }
+    }
+    .menu {
+      display: none;
+    }
+  }
+}

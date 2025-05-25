@@ -1,0 +1,6 @@
+{
+  "plugins": ["bem"],
+  "rules": {
+    "bem/classname": "error"
+  }
+}

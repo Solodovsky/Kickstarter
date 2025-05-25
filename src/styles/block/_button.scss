@@ -1,0 +1,13 @@
+@import "../scss/variables";
+@import "../scss/mixins";
+
+.button {
+  line-height: 100%;
+  padding: 16px 32px;
+  width: max-content;
+  font-size: 12px;
+  background-color: $color-dark-gray;
+  color: $color-white;
+  border: none;
+  text-transform: uppercase;
+}

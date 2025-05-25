@@ -1,0 +1,86 @@
+@import "../scss/variables";
+@import "../scss/mixins";
+
+.hero {
+  color: $color-dark-gray;
+
+  &__content {
+    @include flex-column;
+
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 52px;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    object-fit: contain;
+    margin: 0 auto 40px;
+    max-height: 460px;
+  }
+
+  @include tablet {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    height: 336px;
+    gap: 19px;
+
+    &__content {
+      width: 37%;
+
+      h1 {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 62px;
+      }
+
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
+    &__img {
+      height: 315px;
+    }
+  }
+
+  @include desktop {
+    @include flex-between;
+
+    flex-direction: row-reverse;
+
+    &__content {
+      gap: 30px;
+
+      h1 {
+        font-size: 62px;
+        font-weight: 700;
+        line-height: 78px;
+      }
+
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
+    &__img {
+      height: 465px;
+    }
+  }
+}

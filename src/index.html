@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kickstarter</title>
+    <script defer src="./scripts/main.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="use-credentials"
+    />
+
+    <link rel="stylesheet" href="styles/main.scss" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header body__header">
+        <a href="#" class="header__logo"
+          ><img src="./images/icons/logo.png" alt="Logo"
+        /></a>
+
+        <div class="header__item">
+          <p>Specs</p>
+
+          <p>En / <span class="header__item__mod">Ua</span></p>
+
+          <button class="button" type="button">Buy</button>
+
+          <img class="menu" src="./images/icons/burger_menu.png" alt="burger" />
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+          <div class="mobile-menu__header">
+            <img
+              src="./images/icons/logo.png"
+              class="mobile-menu__logo"
+              alt="Logo"
+            />
+
+            <img
+              src="./images/icons/close.png"
+              class="mobile-menu__close"
+              id="closeMenu"
+            />
+          </div>
+
+          <nav class="">
+            <ul class="nav">
+              <a class="nav__link" href="#">
+                <li class="nav__link--bold">Our story</li>
+              </a>
+
+              <a class="nav__link" href="#">
+                <li>About us</li>
+              </a>
+
+              <a class="nav__link" href="#">
+                <li>Features</li>
+              </a>
+
+              <a class="nav__link" href="#">
+                <li>Get in touch</li>
+              </a>
+            </ul>
+          </nav>
+
+          <div class="item">
+            <p class="item__mod">Specs</p>
+
+            <p>En / <span class="item__mod">Ua</span></p>
+          </div>
+
+          <button class="button button-menu">Buy</button>
+        </div>
+      </header>
+
+      <section class="hero body__hero">
+        <picture>
+          <source
+            srcset="./images/hero_section_mobile.png"
+            media="(min-width: 320px) and (max-width: 744px)"
+          />
+
+          <img
+            class="hero__img"
+            src="./images/hero_section_image.png"
+            alt="column"
+          />
+        </picture>
+
+        <div class="hero__content">
+          <h1>
+            Futuristic <br />Wireless <br />
+            Speaker
+          </h1>
+
+          <p>
+            Luna’s performance is balanced and smooth in all frequency ranges
+            which makes the music both naturally pleasant and distinctly more
+            layered.
+          </p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
