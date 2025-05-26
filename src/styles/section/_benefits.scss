@@ -1,0 +1,74 @@
+.benefits {
+  color: $color-dark-gray;
+  margin-bottom: 110px;
+
+  @include tablet {
+    margin-bottom: 140px;
+  }
+
+  @include desktop {
+    margin-bottom: 170px;
+  }
+}
+.benefits__element {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+
+  display: none;
+  margin-bottom: 90px;
+
+  &--mod {
+    @include desktop {
+      font-weight: 700;
+    }
+  }
+
+  @include desktop {
+    @include flex-center;
+
+    gap: 84px;
+    font-weight: 400;
+  }
+}
+
+.card-list {
+  display: flex;
+  @include flex-between;
+
+  @include tablet {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  @include desktop {
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    @include tablet {
+      max-width: 45%;
+    }
+
+    @include desktop {
+      gap: 33px;
+      max-width: 24%;
+      min-height: 270px;
+    }
+
+    &:not(:first-child) {
+      display: none;
+
+      @include tablet {
+        display: flex;
+      }
+    }
+  }
+}

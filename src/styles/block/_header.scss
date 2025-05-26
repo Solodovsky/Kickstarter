@@ -4,53 +4,39 @@
   @include flex-between;
   height: 76px;
 
-  &__item :nth-child(-n + 3) {
-    display: none;
-  }
-
   @include tablet {
     height: 48px;
+  }
 
-    &__item {
-      @include flex-center;
+  &__element {
+    @include flex-between;
+    gap: 30px;
 
-      gap: 30px;
-      font-size: 14px;
-      font-weight: 400;
-      color: #4f4f4f;
-      text-transform: uppercase;
-
-      &__mod {
-        opacity: 0.5;
-      }
-    }
-
-    &__item :nth-child(-n + 3) {
-      display: flex;
+    @include desktop {
+      gap: 47px;
     }
   }
 
-  @include desktop {
-    height: 48px;
+  &__item {
+    gap: 30px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #4f4f4f;
+    text-transform: uppercase;
+    display: none;
 
-    &__logo img {
-      display: block;
+    &--mod {
+      opacity: 0.5;
     }
 
-    &__item {
-      @include flex-center;
-
-      gap: 24px;
-      font-size: 14px;
-      font-weight: 400;
-      color: #4f4f4f;
-      text-transform: uppercase;
-
-      &__mod {
-        opacity: 0.5;
-      }
+    @include tablet {
+      @include flex-between;
     }
-    .menu {
+  }
+
+  .menu {
+    display: block;
+    @include desktop {
       display: none;
     }
   }

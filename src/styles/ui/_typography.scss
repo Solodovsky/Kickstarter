@@ -1,0 +1,35 @@
+.h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  text-transform: uppercase;
+  text-align: center;
+
+  @include tablet {
+    font-size: 48px;
+    line-height: 62px;
+    text-align: left;
+  }
+
+  @include desktop {
+    font-size: 62px;
+    line-height: 78px;
+  }
+}
+
+.h3 {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.description {
+  line-height: 24px;
+  text-align: left;
+
+  &--small {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+  }
+}

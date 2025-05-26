@@ -34,6 +34,10 @@
     padding: 0;
     margin-bottom: 50px;
 
+    @include tablet {
+      gap: 40px;
+    }
+
     .nav__link {
       font-size: 14px;
       text-decoration: none;
@@ -43,12 +47,6 @@
       &--bold {
         font-weight: 700;
       }
-    }
-  }
-
-  @include tablet {
-    .nav {
-      gap: 40px;
     }
   }
 }
@@ -64,12 +62,12 @@
   margin-bottom: 162px;
   font-size: 14px;
 
-  &__mod {
-    opacity: 0.5;
-  }
-
   @include tablet {
     display: none;
+  }
+
+  &__mod {
+    opacity: 0.5;
   }
 }
 
