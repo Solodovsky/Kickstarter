@@ -4,6 +4,7 @@
   line-height: 52px;
   text-transform: uppercase;
   text-align: center;
+  z-index: 3;
 
   @include tablet {
     font-size: 48px;

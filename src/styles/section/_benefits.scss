@@ -36,6 +36,7 @@
 .card-list {
   display: flex;
   @include flex-between;
+  align-items: stretch;
 
   @include tablet {
     flex-wrap: wrap;
