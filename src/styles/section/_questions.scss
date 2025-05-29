@@ -1,0 +1,30 @@
+.questions {
+  &__title {
+    font-size: 30px;
+    font-weight: 700;
+    color: $color-dark-gray;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+
+  &__block {
+    @include flex-column;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+.input {
+  padding: 12px 20px;
+  background-color: transparent;
+  border: 1px solid $color-light-gray;
+  outline: none;
+}
+
+.textarea {
+  min-height: 128px;
+}
+
+.btn {
+  background-color: #0db2b3;
+}

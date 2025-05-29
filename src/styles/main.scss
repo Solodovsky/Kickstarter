@@ -41,6 +41,7 @@ body {
   }
   &--none {
     padding: 0;
+
     @include tablet {
       padding: 0 34px;
     }
