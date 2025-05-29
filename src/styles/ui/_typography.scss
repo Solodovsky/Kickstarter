@@ -5,6 +5,7 @@
   text-transform: uppercase;
   text-align: center;
   z-index: 3;
+  color: $color-dark-gray;
 
   @include tablet {
     font-size: 48px;
@@ -18,15 +19,37 @@
   }
 }
 
+.h2 {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+  color: $color-dark-gray;
+  text-transform: uppercase;
+
+  @include tablet {
+    font-size: 36px;
+    line-height: 46px;
+    text-align: left;
+  }
+
+  @include desktop {
+    font-size: 56px;
+    line-height: 70px;
+  }
+}
+
 .h3 {
   font-size: 22px;
   font-weight: 700;
   text-align: center;
+  color: $color-dark-gray;
 }
 
 .description {
+  font-size: 16px;
   line-height: 24px;
   text-align: left;
+  color: $color-light-gray;
 
   &--small {
     font-size: 14px;

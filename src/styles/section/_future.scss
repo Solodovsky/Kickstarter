@@ -1,0 +1,79 @@
+.future {
+  display: flex;
+  flex-direction: column;
+  gap: 110px;
+  margin-bottom: 110px;
+
+  @include tablet {
+    margin-bottom: 140px;
+    gap: 140px;
+  }
+
+  @include desktop {
+    margin-bottom: 170px;
+    gap: 170px;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    @include desktop {
+      gap: 30px;
+    }
+
+    img {
+      max-width: 100%;
+
+      @include tablet {
+        max-width: 50%;
+      }
+    }
+
+    &__content {
+      max-width: 100%;
+
+      @include tablet {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 50%;
+      }
+    }
+  }
+}
+
+.margin-bot {
+  margin-bottom: 30px;
+}
+
+.reverse {
+  @include tablet {
+    flex-direction: row-reverse;
+  }
+}
+
+.mobile-h2 {
+  display: block;
+  width: 100%;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.tablet-h2 {
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
+}

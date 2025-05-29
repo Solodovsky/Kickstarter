@@ -1,0 +1,46 @@
+.reviews {
+  margin: 0 auto;
+  position: relative;
+  max-width: 786px;
+  padding-top: 42px;
+
+  &__quotes {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 116.5px);
+    z-index: -1;
+  }
+
+  &__description {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+
+    @include tablet {
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+}
+
+.autor-info {
+  @include flex-column;
+  align-items: center;
+
+  img {
+    width: 62px;
+  }
+
+  &__name {
+    font-weight: 700;
+    line-height: 22px;
+  }
+
+  &__position {
+    font-size: 14px;
+    line-height: 21px;
+    color: $color-light-gray;
+  }
+}

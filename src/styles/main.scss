@@ -39,4 +39,14 @@ body {
     max-width: $desktop-width;
     padding: 0 120px;
   }
+  &--none {
+    padding: 0;
+    @include tablet {
+      padding: 0 34px;
+    }
+
+    @include desktop {
+      padding: 0 120px;
+    }
+  }
 }
