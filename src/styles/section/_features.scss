@@ -43,7 +43,6 @@
 
   &__wrapper {
     @include desktop {
-      background-color: #d6ecec;
       position: relative;
     }
   }
@@ -88,8 +87,19 @@
 
   img {
     max-width: 335px;
+
     @include tablet {
       max-width: 415px;
+    }
+
+    @include desktop {
+      max-width: 615px;
+    }
+  }
+
+  @media (max-width: 1440px) and (min-width: 1024px) {
+    img {
+      max-width: 403px;
     }
   }
 }
@@ -111,6 +121,6 @@
     max-width: 50%;
     position: absolute;
     bottom: 0;
-    right: -4%;
+    right: 1%;
   }
 }
