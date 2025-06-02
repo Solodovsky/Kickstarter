@@ -48,10 +48,7 @@
   }
 }
 
-.block {
-  @include desktop {
-  }
-
+.feature {
   &__title {
     font-size: 18px;
     font-weight: 700;
@@ -86,14 +83,26 @@
   }
 
   img {
-    max-width: 335px;
+    max-width: 323px;
 
     @include tablet {
-      max-width: 415px;
+      max-width: 435px;
     }
 
     @include desktop {
       max-width: 615px;
+    }
+  }
+
+  @media screen and (min-width: 1225px) and (max-width: 1439px) {
+    img {
+      transform: translateX(109px);
+    }
+  }
+
+  @media screen and (width: 1440px) {
+    img {
+      transform: translateX(200px);
     }
   }
 
@@ -102,25 +111,29 @@
       max-width: 403px;
     }
   }
-}
 
-.block-1,
-.block-2 {
-  display: none;
-  @include desktop {
-    display: block;
+  &--connectivity,
+  &--app {
+    display: none;
+    @include desktop {
+      display: block;
+    }
+  }
+
+  &--sound {
+    margin-bottom: 50px;
   }
 }
-.block-3 {
-  margin-bottom: 50px;
-}
 
-.block-4 {
+.feature--img {
+  transform: translateY(3px);
+
   @include desktop {
+    transform: none;
     width: 100%;
     max-width: 50%;
     position: absolute;
-    bottom: 0;
+    bottom: -2px;
     right: 1%;
   }
 }

@@ -51,6 +51,10 @@
   text-align: left;
   color: $color-gray;
 
+  &--margin-bot {
+    margin-bottom: 30px;
+  }
+
   &--small {
     font-size: 14px;
     line-height: 21px;

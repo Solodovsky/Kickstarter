@@ -15,6 +15,7 @@
   margin: 0;
   padding: 0;
   text-transform: uppercase;
+  cursor: pointer;
 
   display: none;
   margin-bottom: 90px;
@@ -29,7 +30,6 @@
     @include flex-center;
 
     gap: 84px;
-    font-weight: 400;
   }
 }
 

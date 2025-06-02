@@ -12,9 +12,6 @@ body {
   @include tablet {
     margin-top: 30px;
   }
-  @include desktop {
-    margin-top: 30px;
-  }
 }
 
 .body__hero {
