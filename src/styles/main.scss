@@ -1,0 +1,50 @@
+@import "./scss/index";
+@import "./ui/index";
+@import "./block/index";
+@import "./section/index";
+
+body {
+  font-family: Inter, sans-serif;
+  background-color: #f7f7f7;
+}
+
+.body__header {
+  @include tablet {
+    margin-top: 30px;
+  }
+}
+
+.body__hero {
+  @include tablet {
+    margin: 140px 0;
+  }
+  @include desktop {
+    margin: 90px 0;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 30px;
+
+  @include tablet {
+    padding: 0 34px;
+  }
+
+  @include desktop {
+    max-width: $desktop-width;
+    padding: 0 120px;
+  }
+  &--none {
+    padding: 0;
+
+    @include tablet {
+      padding: 0 34px;
+    }
+
+    @include desktop {
+      padding: 0 120px;
+    }
+  }
+}

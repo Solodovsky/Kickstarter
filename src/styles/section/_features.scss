@@ -1,0 +1,139 @@
+.features {
+  margin-bottom: 90px;
+
+  @include tablet {
+    margin-bottom: 140px;
+  }
+
+  @include desktop {
+    margin-bottom: 170px;
+  }
+
+  &__title {
+    font-size: 30px;
+    margin-bottom: 30px;
+
+    @include tablet {
+      font-weight: 700;
+    }
+
+    @include desktop {
+      font-size: 56px;
+    }
+  }
+
+  &__content {
+    @include flex-column;
+
+    align-items: center;
+    background-color: #d6ecec;
+    padding-top: 30px;
+
+    @include tablet {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding-left: 90px;
+      padding-top: 60px;
+    }
+
+    @include desktop {
+      gap: 56px;
+    }
+  }
+
+  &__wrapper {
+    @include desktop {
+      position: relative;
+    }
+  }
+}
+
+.feature {
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0c797a;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    @include desktop {
+      font-size: 34px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    gap: 10px;
+    padding-left: 20px;
+    color: $color-dark-gray;
+    @include desktop {
+      font-size: 16px;
+    }
+  }
+
+  &__svg {
+    grid-column: 1;
+
+    @include desktop {
+      display: none;
+    }
+  }
+
+  img {
+    max-width: 323px;
+
+    @include tablet {
+      max-width: 435px;
+    }
+
+    @include desktop {
+      max-width: 615px;
+    }
+  }
+
+  @media screen and (min-width: 1225px) and (max-width: 1439px) {
+    img {
+      transform: translateX(109px);
+    }
+  }
+
+  @media screen and (width: 1440px) {
+    img {
+      transform: translateX(200px);
+    }
+  }
+
+  @media (max-width: 1440px) and (min-width: 1024px) {
+    img {
+      max-width: 403px;
+    }
+  }
+
+  &--connectivity,
+  &--app {
+    display: none;
+    @include desktop {
+      display: block;
+    }
+  }
+
+  &--sound {
+    margin-bottom: 50px;
+  }
+}
+
+.feature--img {
+  transform: translateY(3px);
+
+  @include desktop {
+    transform: none;
+    width: 100%;
+    max-width: 50%;
+    position: absolute;
+    bottom: -2px;
+    right: 1%;
+  }
+}

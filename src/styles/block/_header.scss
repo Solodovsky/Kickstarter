@@ -1,0 +1,42 @@
+@import "../scss/mixins";
+
+.header {
+  @include flex-between;
+  height: 76px;
+
+  @include tablet {
+    height: 48px;
+  }
+
+  &__element {
+    @include flex-between;
+    gap: 30px;
+
+    @include desktop {
+      gap: 47px;
+    }
+  }
+
+  &__item {
+    gap: 30px;
+    font-size: 14px;
+    color: #4f4f4f;
+    text-transform: uppercase;
+    display: none;
+
+    &--mod {
+      opacity: 0.5;
+    }
+
+    @include tablet {
+      @include flex-between;
+    }
+  }
+
+  .menu {
+    display: block;
+    @include desktop {
+      display: none;
+    }
+  }
+}

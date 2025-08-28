@@ -1,0 +1,22 @@
+.link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #0db2b3;
+  font-size: 12px;
+  font-weight: 700;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 53px;
+    height: 2px;
+    background-color: #0db2b3;
+
+    @include desktop {
+      width: 63px;
+    }
+  }
+}

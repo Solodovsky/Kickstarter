@@ -1,0 +1,61 @@
+.footer {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  position: relative;
+  height: 96px;
+
+  @include tablet {
+    height: 190px;
+  }
+
+  &__text {
+    bottom: 0;
+    font-size: 14px;
+    line-height: 21px;
+    color: #bdbdbd;
+    margin: 30px 0;
+    max-width: 260px;
+    text-align: center;
+  }
+
+  &__logo {
+    display: none;
+
+    @include tablet {
+      display: block;
+      position: absolute;
+      top: 0;
+    }
+  }
+
+  &__link {
+    display: none;
+
+    @include tablet {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin-right: 50px;
+      cursor: pointer;
+    }
+
+    @include desktop {
+      margin-right: 125px;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    gap: 47px;
+
+    @include tablet {
+      gap: 56px;
+    }
+    @include desktop {
+      gap: 47px;
+    }
+  }
+}

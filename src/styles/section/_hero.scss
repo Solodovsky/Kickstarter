@@ -1,0 +1,54 @@
+@import "../scss/variables";
+@import "../scss/mixins";
+
+.hero {
+  color: $color-dark-gray;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 110px;
+
+  @include tablet {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 20px;
+    margin-bottom: 140px;
+  }
+
+  @include desktop {
+    @include flex-between;
+    margin-bottom: 170px;
+
+    flex-direction: row-reverse;
+  }
+
+  &__content {
+    @include flex-column;
+
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+
+    @include tablet {
+      width: 37%;
+    }
+    @include desktop {
+      gap: 30px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    object-fit: contain;
+    max-height: 460px;
+
+    @include tablet {
+      height: 315px;
+    }
+
+    @include desktop {
+      height: 465px;
+    }
+  }
+}
